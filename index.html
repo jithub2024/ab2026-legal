@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Política de Privacidad — Feria de Albacete (fan app)</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+    line-height: 1.6;
+    color: #1f2328;
+    background: #ffffff;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 0.2em; }
+  h2 { font-size: 1.25rem; margin-top: 2em; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.2em; }
+  p, ul { margin: 0.75em 0; }
+  ul { padding-left: 1.4em; }
+  li { margin: 0.3em 0; }
+  a { color: #0969da; }
+  a:hover { text-decoration: underline; }
+  hr { border: 0; border-top: 1px solid #e5e7eb; margin: 2.5em 0 1.5em; }
+  .meta { color: #57606a; font-style: italic; }
+  .summary { background: #f6f8fa; border-left: 4px solid #0969da; padding: 0.8em 1em; border-radius: 4px; }
+  footer { color: #57606a; font-size: 0.9rem; font-style: italic; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0d1117; color: #e6edf3; }
+    h2 { border-bottom-color: #30363d; }
+    hr { border-top-color: #30363d; }
+    a { color: #58a6ff; }
+    .summary { background: #161b22; border-left-color: #58a6ff; }
+    .meta, footer { color: #8b949e; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidad — Feria de Albacete (fan app)</h1>
+<p class="meta">Última actualización: 20 de abril de 2026</p>
+
+<p>
+  Esta aplicación (en adelante, «la App») es un proyecto personal no oficial
+  creado por David Marco Moreno como homenaje a la Feria de Albacete. Esta
+  política explica de forma clara qué datos maneja la App y cómo lo hace.
+</p>
+
+<h2>Resumen en una frase</h2>
+<p class="summary">
+  <strong>La App no recoge, no envía ni almacena en servidores externos ningún
+  dato personal.</strong> Todo lo que tecleas, marcas o consultas vive
+  únicamente en tu dispositivo.
+</p>
+
+<h2>Datos que la App NO recoge</h2>
+<ul>
+  <li>Nombre, email, teléfono, ubicación, identificadores únicos de dispositivo.</li>
+  <li>Contactos, fotos, archivos, calendario.</li>
+  <li>Cookies de seguimiento ni analítica de terceros (Google Analytics, Firebase, Meta, Mixpanel, etc.). No hay analítica en absoluto.</li>
+  <li>Historial de navegación, comportamiento dentro de la App, tiempo de uso.</li>
+</ul>
+
+<h2>Datos que la App SÍ almacena en tu dispositivo</h2>
+<p>
+  Todos estos datos se guardan localmente usando AsyncStorage (almacenamiento
+  del sistema operativo, aislado por app). No salen del dispositivo salvo que
+  tú decidas compartirlos mediante el menú de compartir del sistema.
+</p>
+<ul>
+  <li><strong>Eventos favoritos</strong>: los eventos del programa que marcas con el corazón.</li>
+  <li><strong>Identificadores internos de notificaciones</strong>: IDs técnicos que permiten a la App cancelar el recordatorio 1 h antes cuando quitas un favorito.</li>
+  <li><strong>Caché de noticias</strong>: una copia local de las 4 últimas noticias descargadas de <a href="https://feria.albacete.es">feria.albacete.es</a>, para mostrarlas sin conexión.</li>
+  <li><strong>Fecha de la última consulta de noticias</strong>: timestamp que permite respetar el tope de 1 consulta diaria.</li>
+  <li><strong>Preferencia de bienvenida</strong>: una marca que recuerda si ya has visto el aviso inicial de «versión demo».</li>
+</ul>
+
+<h2>Notificaciones</h2>
+<p>
+  La App puede enviarte <strong>notificaciones locales</strong> 1 hora antes
+  de cada evento que marques como favorito. Estas notificaciones las programa
+  tu propio sistema operativo (iOS/Android) y <strong>no requieren conexión a
+  internet ni servidor propio</strong>. No usamos servicios de notificaciones
+  push (APNs, FCM) y nunca enviamos tokens a ningún servidor.
+</p>
+<p>
+  Puedes revocar el permiso de notificaciones en cualquier momento desde los
+  ajustes de tu dispositivo.
+</p>
+
+<h2>Conexiones externas</h2>
+<p>
+  La única conexión externa que realiza la App es una descarga del HTML
+  público de <code>feria.albacete.es/es/noticias</code>, como máximo
+  <strong>una vez al día</strong> y solo cuando:
+</p>
+<ul>
+  <li>Abres la App después de más de 24 h desde la última consulta, o</li>
+  <li>Deslizas hacia abajo en la pantalla de noticias para forzar una actualización (pull-to-refresh).</li>
+</ul>
+<p>
+  Esa conexión se realiza directamente desde tu dispositivo al sitio web del
+  Excmo. Ayuntamiento de Albacete. Tu dirección IP queda registrada en los
+  servidores de dicho sitio bajo su propia política, no la nuestra. La App no
+  ve, guarda ni transmite tu IP.
+</p>
+
+<h2>Compartir</h2>
+<p>
+  La App ofrece la opción de compartir un evento o tu «Plan de hoy» a través
+  del menú de compartir del sistema operativo (WhatsApp, Mail, Mensajes,
+  etc.). El contenido compartido es texto plano que tú eliges enviar. La App
+  no interviene en a quién ni cómo se lo mandas: lo hace el sistema.
+</p>
+
+<h2>Enlaces a sitios de terceros</h2>
+<p>La App incluye enlaces directos a:</p>
+<ul>
+  <li><a href="https://feria.albacete.es">feria.albacete.es</a> (web oficial del Ayuntamiento).</li>
+  <li>Perfil de LinkedIn del autor.</li>
+  <li>Teléfonos útiles (112, 080, 092, 091, 967 50 43 36) a través del marcador del sistema.</li>
+</ul>
+<p>
+  Al tocar cualquiera de esos enlaces sales de la App. Lo que ocurra a partir
+  de ahí se rige por la política de privacidad del destino, no por ésta.
+</p>
+
+<h2>Menores</h2>
+<p>
+  La App no recoge datos, así que no recoge datos de menores. Es apta para
+  todos los públicos.
+</p>
+
+<h2>Derechos del usuario</h2>
+<p>
+  Como no almacenamos tus datos en ningún servidor, no hay datos personales
+  tuyos sobre los que ejercer derechos de acceso, rectificación o supresión
+  en sede del autor.
+</p>
+<p>
+  <strong>Para borrar todos los datos locales</strong>, basta con desinstalar
+  la App.
+</p>
+
+<h2>Cambios en esta política</h2>
+<p>
+  Si esta política cambia de manera sustancial, la versión nueva se publicará
+  en esta misma URL y se actualizará la fecha de «Última actualización».
+</p>
+
+<h2>Contacto</h2>
+<p>Para cualquier duda, reclamación o sugerencia sobre privacidad:</p>
+<ul>
+  <li>Autor: David Marco Moreno</li>
+  <li>LinkedIn: <a href="https://www.linkedin.com/in/davidmarcomoreno/">linkedin.com/in/davidmarcomoreno</a></li>
+  <li>Repositorio del proyecto: <a href="https://github.com/jithub2024/ab2026">github.com/jithub2024/ab2026</a></li>
+</ul>
+
+<hr>
+
+<footer>
+  Aplicación no oficial. No está asociada, patrocinada ni avalada por el
+  Excmo. Ayuntamiento de Albacete. Los datos del programa proceden del
+  programa oficial publicado por el Ayuntamiento en
+  <a href="https://feria.albacete.es">feria.albacete.es</a>.
+</footer>
+
+</body>
+</html>
